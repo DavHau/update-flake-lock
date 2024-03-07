@@ -154,6 +154,7 @@ runs:
         TARGETS: ${{ inputs.inputs }}
         COMMIT_MSG: ${{ inputs.commit-msg }}
         PATH_TO_FLAKE_DIR: ${{ inputs.path-to-flake-dir }}
+        FLAKE_DIRS: ${{ inputs.flake-dirs }}
     - name: Save PR Body as file
       uses: DamianReeves/write-file-action@v1.3
       with:
